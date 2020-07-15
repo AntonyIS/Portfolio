@@ -8,7 +8,10 @@
       <li class="nav-item active">
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
-     
+      <li class="nav-item active">
+        <a class="nav-link" href="{{url_for('profile')}}">About Antony</a>
+      </li>
+
     </ul>
 
     <ul class="navbar-nav ml-auto">
@@ -21,7 +24,7 @@
       </li>
       {% else %}
       <li class="nav-item ">
-        <a class="nav-link" href="#">Profile </a>
+        <a class="nav-link" href="{{url_for('profile')}}">Profile </a>
       </li>
       <li class="nav-item ">
         <a class="nav-link" href="{{url_for('logout')}}">Logout </a>
